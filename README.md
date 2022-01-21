@@ -1,2 +1,2 @@
 # taller-docker
-Ejemplo de aplicación para un pequeño taller impartida
+Ejemplo de aplicación para un pequeño taller impartido
