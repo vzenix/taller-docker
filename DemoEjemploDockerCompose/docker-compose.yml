@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  ejemplo:
+#    image: node:12-alpine
+    image: "vzenix/demo-ejemplo"
+    command: 'sh -c "npm install && node src/server.15.02.js"'
+    working_dir: "/app"
+    ports:
+      - 4500:4500
+    volumes:
+      - "./app:/app"
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: secret
+      MYSQL_DB: todos
